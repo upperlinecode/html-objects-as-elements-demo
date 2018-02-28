@@ -1,12 +1,12 @@
 console.log("script running")
 
-let mycooldiv = document.querySelector("#bestdiv")
+let mydiv = document.querySelector("#bestdiv")
 let resultsdiv = document.querySelector("#results")
 
-console.log(mycooldiv)
+console.log(mydiv)
 console.log(resultsdiv)
 
-window.addEventListener("click", e => {
-    console.log(e.key)
+mydiv.addEventListener("click", e => {
+    console.log("Div clicked!")
     resultsdiv.innerHTML += `<img width="80px" src="http://3.bp.blogspot.com/-AAtMS2pqX48/Ti2KVTN9M_I/AAAAAAAAAmc/ty2v0LXNgbc/s400/71979251_yLVzkVrF_c.jpg" />`
 })
